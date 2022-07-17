@@ -24,7 +24,7 @@ if __name__ == '__main__':
 
         q = Queue()
 
-        for i in range(1, len(input_arr) + 1):
+        for i in input_arr:
             q.put(i)
 
         reverse(q)
