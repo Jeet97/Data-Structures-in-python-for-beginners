@@ -42,7 +42,7 @@ def deleteNode(root, key):
     if not root:
         print('Tree is empty')
         return
-
+    # If root is the only node, return root if same.
     if root.left == None and root.right == None:
         if root.data == key:
             return None
@@ -58,6 +58,7 @@ def deleteNode(root, key):
 
     temp = None
 
+    # BFS iteration 
     while (q.qsize()):
         temp = q.get()
 
